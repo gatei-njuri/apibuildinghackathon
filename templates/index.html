@@ -1,0 +1,41 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Foreign Exchange Rates App</h1>
+  <h3>The rates are accurate to the minute and relative to the reserve currency (US dollar).</h3>
+  <h4>Fiat Currencies</h4>
+  <div class="values">
+  <p>Kenya Shilling : {{KES}}</p>
+  <p>Great British Pound : {{GBP}}</p>
+  <p>Euro : {{EUR}}</p>
+  <p>Australian Dollar : {{AUD}}</p>
+  <p>Canadian Dollar : {{CAD}}</p>
+  <p>Swiss Franc : {{CHF}}</p>
+  <p>Japanese Yen : {{JPY}}</p>
+  <p>New Zealand Dollar : {{NZD}}</p>
+  </div>
+  <h4> Cryptos</h4>
+  <div class="values">
+  <p>Bitcoin : {{BTC}}</p>
+  <p>Solana : {{SOL}}</p>
+  <p>Polkadot : {{DOT}}</p>
+  </div>
+  <button onclick=reload()>Reload page</button>
+  <footer>
+    <h2>Made by Gatei Njuri 2024</h2>
+  </footer>
+</body>
+  <script>
+    function reload(){
+      window.location.reload();
+    }
+  </script>
+</html>
